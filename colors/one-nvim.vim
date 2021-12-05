@@ -1,3 +1,9 @@
+let g:one_init_flag = get(g:, 'one_init_flag', 0)
+if g:one_init_flag == 1
+    finish
+endif
+let g:one_init_flag = 1
+
 lua << EOF
 vim.g.colors_name = "one-nvim"
 
@@ -36,9 +42,9 @@ if vim.o.background == "dark" then
      term_cyan     = {"#56b6c2", 247, "term_cyan"}
      term_white    = {"#dcdfe4", 188, "term_white"}
      term_8        = {"#5d677a", 242, "term_8"}
-     syntax_color_added    = {"#43d08a", 78, "syntax_color_added"}     -- hsl(150,  60%, 54%);
-     syntax_color_modified = {"#e0c285", 250, "syntax_color_modified"} -- hsl(40,   60%, 70%);
-     syntax_color_removed  = {"#e05252", 244, "syntax_color_removed"}   -- hsl(0,    70%, 60%);
+     syntax_color_added    = {"#98c379", 78, "syntax_color_added"}     -- hsl(150,  60%, 54%);
+     syntax_color_modified = {"#d19a66", 250, "syntax_color_modified"} -- hsl(40,   60%, 70%);
+     syntax_color_removed  = {"#e06c75", 244, "syntax_color_removed"}   -- hsl(0,    70%, 60%);
 else 
      --[[ 
           Light Colors
