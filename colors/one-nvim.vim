@@ -610,7 +610,7 @@ local highlight_groups = {
      NERDTreeFile = { fg = mono_1 },
 
 -- Coc.nvim
-CocFloating = { bg = none },
+CocFloating = { bg = pmenu },
 NormalFloating = { bg = none },
 
 -----------------------------
