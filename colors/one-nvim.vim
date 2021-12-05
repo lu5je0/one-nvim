@@ -195,7 +195,7 @@ local highlight_groups = {
 -- Standard Syntax Highlighting --
 ----------------------------------
 
-     Comment        = { fg = mono_3,  style = 'italic'},
+     Comment        = { fg = mono_3},
      Constant       = { fg = hue_4, bg = none},
      String         = { fg = hue_4, bg = none},
      Character      = { fg = hue_4, bg = none},
