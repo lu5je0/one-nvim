@@ -138,7 +138,7 @@ local highlight_groups = {
     -- Syntax Groups (descriptions and ordering from `:h w18`) --
     -------------------------------------------------------------
      Normal       = normal,
-     NormalFloat  = normal,
+     NormalFloat  = {bg = pmenu},
      bold         = { style = 'bold'},
      ColorColumn  = { fg = none, bg = syntax_cursor },
      Conceal      = { fg = mono_4, bg = syntax_bg },
@@ -611,7 +611,7 @@ local highlight_groups = {
 
 -- Coc.nvim
 CocFloating = { bg = pmenu },
-NormalFloating = { bg = none },
+NormalFloating = { bg = p },
 
 -----------------------------
 --     LSP Highlighting    --
